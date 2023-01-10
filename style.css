@@ -1,7 +1,6 @@
 .nav-bar {
   display: inline-flex;
   justify-content: center;
-  position: flex;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -68,4 +67,31 @@ p {
 element.style {
   font-weight: bold;
   color: black;
+}
+
+div.gallery {
+  display: inline-block;
+  flex-direction: row;
+  margin: 10px;
+  border: 0px solid #ccc;
+  justify-content: center;
+  width: 200px;
+  padding: 0%;
+}
+
+div.gallery:hover {
+  border: 1px solid black;
+}
+
+div.gallery img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    width: 100%;
+  }
 }
