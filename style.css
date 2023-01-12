@@ -71,6 +71,7 @@ element.style {
 
 div.gallery {
   display: inline-block;
+  justify-content: center;
   flex-direction: row;
   margin: 10px;
   border: 0px solid #ccc;
@@ -85,11 +86,26 @@ div.gallery:hover {
 
 div.gallery img {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
   height: auto;
 }
 
+li {
+  line-height: 25px;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
 @media screen and (max-width: 500px) {
   .gallery {
     width: 100%;
